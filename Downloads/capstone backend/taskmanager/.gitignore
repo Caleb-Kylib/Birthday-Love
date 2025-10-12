@@ -45,3 +45,7 @@ coverage.xml
 
 # ---- Local configuration ----
 *.local
+
+# Static and media (collected)
+staticfiles/
+media/
