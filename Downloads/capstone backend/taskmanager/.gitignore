@@ -1,0 +1,47 @@
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Django ----
+db.sqlite3
+media/
+staticfiles/
+.env
+
+# ---- Virtual Environment ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- IDE & Editor ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS-specific ----
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini
+
+# ---- Logs & Backups ----
+*.log
+*.bak
+*.tmp
+
+# ---- Pytest / Coverage ----
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache
+
+# ---- Local configuration ----
+*.local
