@@ -31,6 +31,8 @@ INSTALLED_APPS = [
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    # include the templates/static folder where the project currently stores CSS
+    BASE_DIR / "core" / "templates" / "static",
 ]
 
 MIDDLEWARE = [
@@ -93,7 +95,6 @@ USE_TZ = True
 # -------------------------
 # Static files
 # -------------------------
-STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
