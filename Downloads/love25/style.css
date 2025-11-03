@@ -7,8 +7,38 @@ body {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #fddde6, #ffe8f3);
+  background: #0f0b14; /* deep, romantic background replacing pink gradient */
   min-height: 100vh;
+}
+
+.hero-banner {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* Gallery */
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+  will-change: transform, box-shadow, filter;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.gallery-item:hover .gallery-img {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 14px 28px rgba(201, 24, 96, 0.22), 0 8px 12px rgba(0, 0, 0, 0.12);
+  filter: saturate(1.15) contrast(1.05);
+}
+
+@media (max-width: 575.98px) {
+  .hero-banner { max-height: 35vh; }
+  .gallery-img { height: 160px; }
 }
 
 .hero-title {
@@ -55,3 +85,48 @@ body {
   font-size: 2.5rem;
   color: #c91860;
 }
+
+/* Floating Hearts Layer */
+#floating-hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 999; /* above content, still non-interactive */
+}
+
+/* Base heart shape (CSS heart using pseudo-elements) */
+.heart {
+  position: absolute;
+  width: 12px;            /* will be overridden inline for variety */
+  height: 12px;           /* will be overridden inline for variety */
+  background: #ff6b9e;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.6), 0 0 16px rgba(255, 105, 180, 0.35);
+  opacity: 0.8;           /* tweaked per heart inline */
+  will-change: transform, opacity;
+}
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+  box-shadow: inherit;
+}
+.heart::before {
+  top: -50%;
+  left: 0;
+}
+.heart::after {
+  left: -50%;
+  top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #floating-hearts { display: none; }
+}
+
