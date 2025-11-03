@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You 💕 | Sweet25</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <!-- Motion One (Framer Animations) -->
+  <script src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center">
+    <div>
+      <h1 class="hero-title">Hey, Beautiful 💕</h1>
+      <p class="lead">This page is for you — because you deserve to be celebrated.</p>
+      <div class="scroll-down mt-5">
+        <span>&#x25BC;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Love About You -->
+  <section id="love" class="py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-4">What I Love About You</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-motion>
+          <div class="love-card p-4 shadow-sm rounded">
+            <p>Your laugh — my favorite melody.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-motion>
+          <div class="love-card p-4 shadow-sm rounded">
+            <p>The way you light up every room.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-motion>
+          <div class="love-card p-4 shadow-sm rounded">
+            <p>Your kindness, your spark, your strength.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Moments -->
+  <section id="moments" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="section-title mb-4">Our Moments</h2>
+      <div class="row g-3">
+        <div class="col-md-4 col-sm-6" data-motion>
+          <img src="https://placehold.co/400x300?text=Memory+1" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-4 col-sm-6" data-motion>
+          <img src="https://placehold.co/400x300?text=Memory+2" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-4 col-sm-6" data-motion>
+          <img src="https://placehold.co/400x300?text=Memory+3" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Invitation -->
+  <section id="invite" class="py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-3">Dinner Invitation</h2>
+      <p class="lead mb-4">
+        I couldn’t think of a better way to celebrate you than with a special dinner.<br>
+        Join me on <strong>November 25th</strong> at <strong>The Garden Bistro</strong>.<br>
+        Dress code: stunning as always 😉
+      </p>
+
+      <div id="countdown" class="mb-4 fs-4"></div>
+      <button id="rsvpBtn" class="btn btn-pink btn-lg">Yes, I’ll be there 💖</button>
+      <div id="thankYou" class="mt-4 text-success fw-bold"></div>
+    </div>
+  </section>
+
+  <!-- Forever Yours -->
+  <section id="closing" class="py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="script-font mb-3">Forever Yours,</h2>
+      <p class="lead">You mean the world to me. Can’t wait to see you on your special day. — Caleb 💌</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

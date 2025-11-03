@@ -1,0 +1,57 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #fddde6, #ffe8f3);
+  min-height: 100vh;
+}
+
+.hero-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #c91860;
+}
+
+.scroll-down span {
+  font-size: 2rem;
+  color: #c91860;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Love Cards */
+.love-card {
+  background-color: #fff;
+  border: 2px solid #fbc4d8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.love-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(201, 24, 96, 0.2);
+}
+
+/* Buttons */
+.btn-pink {
+  background-color: #c91860;
+  color: #fff;
+  border: none;
+}
+.btn-pink:hover {
+  background-color: #a51250;
+}
+
+/* Script Font */
+.script-font {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #c91860;
+}
